@@ -1,4 +1,5 @@
 /* eslint-disable consistent-return */
+import axios from 'axios';
 import { apiRequest, apiRequestFailed, apiRequestSucceed } from '../slices/coins-dux';
 
 const apiCalls = ({ dispatch }) => (next) => async (action) => {
@@ -6,24 +7,15 @@ const apiCalls = ({ dispatch }) => (next) => async (action) => {
   next(action);
 
   const {
-    method, onSuccess, onStart, onError,
+    onSuccess, onStart, onError,
   } = action.payload;
 
   if (onStart) dispatch({ type: onStart });
   next(action);
 
   try {
-    const apiResponse = await fetch(
-      'api.coincap.io/v2/assets',
-      {
-        method,
-        headers: {
-          'Content-Type': 'application/json; charset=UTF-8',
-        },
-      },
-    )
-      .then((res) => res)
-      .then((data) => console.log(data.body));
+    const apiResponse = await axios.get('https://api.coincap.io/v2/assets')
+      .then((data) => data.data.data);
     dispatch(apiRequestSucceed(apiResponse));
     if (onSuccess) dispatch({ type: onSuccess, payload: apiResponse });
   } catch (error) {

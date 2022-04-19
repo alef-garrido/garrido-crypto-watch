@@ -32,8 +32,6 @@ export const apiRequestFailed = createAction('api/RequestFailed');
 
 // to handle UI events
 export const loadCoins = () => apiRequest({
-  url: '/assets',
-  method: 'GET',
   onStart: coinsRequested.type,
   onSuccess: coinsReceived.type,
   onError: coinsRequestFailed.type,
