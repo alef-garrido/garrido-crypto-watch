@@ -1,14 +1,14 @@
-import React from "react";
-import Home from "./Home";
+import React from 'react';
+import Home from './Coins';
 
-const App = () => {
-  return(
+function App() {
+  return (
     <main className="app--container">
       <div>
         <Home />
       </div>
     </main>
-  )
+  );
 }
 
 export default App;
