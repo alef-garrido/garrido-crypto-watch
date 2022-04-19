@@ -1,13 +1,13 @@
-// import React, { useEffect } from 'react';
-// import { useDispatch } from 'react-redux';
-// import { loadCoins } from '../store/slices/coins-dux';
+import React, { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { loadCoins } from '../store/slices/coins-dux';
 import Home from './Coins';
 
 function App() {
-  // const dispatch = useDispatch();
-  // useEffect(() => {
-  //   dispatch(loadCoins());
-  // }, []);
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(loadCoins());
+  }, []);
   return (
     <main className="app--container">
       <div>
