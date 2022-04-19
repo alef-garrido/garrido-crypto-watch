@@ -2,7 +2,9 @@ import React from 'react';
 
 function CoinItem() {
   return (
-    <div />
+    <li className="coin--item">
+      <p>Werk</p>
+    </li>
   );
 }
 
