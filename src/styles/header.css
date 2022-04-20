@@ -1,28 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
 .header--container {
   display: flex;
-  height: 8rem;
-  background-color: #ec4c8a;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 25vh;
+  margin: 1.5rem;
+  padding: 0.25%;
   color: aliceblue;
 }
+
 .header--container form {
+  width: 70%;
+  height: 3rem;
   align-self: center;
-  margin-left: 3rem;
+  display: flex;
+  align-items: center;
+  border-bottom: solid #b13967 1px;
+  border-radius: 10px;
+  box-shadow: 0 2px 3px 1px rgba(124, 121, 121, 0.342);
+}
+
+.header--search {
+  width: 1rem;
+  height: 1rem;
+  margin: 0 0.5rem;
 }
 
 .header--container form > input {
+  width: 100%;
   border: none;
   background-color: transparent;
-  color: white;
+  color: aliceblue;
+  font-family: 'Lato', sans-serif;
 }
 
 .header--container form > input::placeholder {
-  color: white;
+  color: #b13967;
+  font-family: 'Lato', sans-serif;
+}
+
+.header--container form > input:focus {
+  border: none;
 }
 
 .header--title {
   width: 100%;
-  margin: 0.5rem;
-  font-size: 1rem;
-  align-self: center;
+  margin: 0.25rem;
+  align-self: flex-start;
+  justify-self: flex-end;
   text-align: right;
+}
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 7vw;
+  font-weight: 900;
+}
+
+.header--subtitle {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 3vw;
+  font-weight: 500;
 }

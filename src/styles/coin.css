@@ -21,8 +21,8 @@
 }
 
 .coin--head {
-  font-size: 3rem;
-  align-self: center;
+  font-size: 10vw;
+  align-self: flex-start;
   font-family: 'Open Sans', sans-serif;
   font-weight: 800;
   color: #b13967;
