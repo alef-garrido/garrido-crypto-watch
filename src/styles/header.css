@@ -1,0 +1,28 @@
+.header--container {
+  display: flex;
+  height: 8rem;
+  background-color: #ec4c8a;
+  color: aliceblue;
+}
+.header--container form {
+  align-self: center;
+  margin-left: 3rem;
+}
+
+.header--container form > input {
+  border: none;
+  background-color: transparent;
+  color: white;
+}
+
+.header--container form > input::placeholder {
+  color: white;
+}
+
+.header--title {
+  width: 100%;
+  margin: 0.5rem;
+  font-size: 1rem;
+  align-self: center;
+  text-align: right;
+}

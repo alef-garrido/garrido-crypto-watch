@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 import CoinItem from './CoinItem';
 import '../styles/coinList.css';
 
-function Home() {
+function Coins() {
   const coins = useSelector((state) => state.coins.list);
   const status = useSelector((state) => state.coins.isloading);
   return (
@@ -19,4 +19,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Coins;

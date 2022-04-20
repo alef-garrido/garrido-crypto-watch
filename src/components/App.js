@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { loadCoins } from '../store/slices/coins-dux';
-import Home from './Coins';
+import Home from './Home';
 
 function App() {
   const dispatch = useDispatch();

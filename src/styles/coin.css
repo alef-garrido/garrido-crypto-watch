@@ -2,28 +2,31 @@
 
 .coin--item {
   width: 100%;
-  padding: 1rem .5rem;
+  padding: 1rem 0.5rem;
   display: flex;
   flex-direction: column;
   text-align: right;
   list-style: none;
   background-color: var(--pripary-color);
 }
+
 .coin--item:nth-child(4n + 2),
 .coin--item:nth-child(4n + 3) {
   background-color: var(--accent-color);
 }
+
 .coin--btn {
   color: aliceblue;
   align-self: flex-end;
 }
+
 .coin--head {
   font-size: 3rem;
   align-self: center;
-  font-family: 'Open Sans', sans-serif;;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 800;
-  color: #B13967;
-  margin: .5rem 0;
+  color: #b13967;
+  margin: 0.5rem 0;
 }
 
 .coin--preview {
@@ -32,10 +35,12 @@
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
 }
+
 .coin-value {
   font-size: 1rem;
   font-weight: 500;
 }
+
 .coin-percent {
   font-weight: 400;
 }
