@@ -3,6 +3,8 @@
 .coin--item {
   width: 100%;
   padding: 1rem .5rem;
+  display: flex;
+  flex-direction: column;
   text-align: right;
   list-style: none;
   background-color: var(--pripary-color);
@@ -11,10 +13,13 @@
 .coin--item:nth-child(4n + 3) {
   background-color: var(--accent-color);
 }
-
+.coin--btn {
+  color: aliceblue;
+  align-self: flex-end;
+}
 .coin--head {
   font-size: 3rem;
-  text-align: center;
+  align-self: center;
   font-family: 'Open Sans', sans-serif;;
   font-weight: 800;
   color: #B13967;

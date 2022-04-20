@@ -1,5 +1,6 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
+import { BsArrowRightCircle } from 'react-icons/bs';
 import '../styles/coin.css';
 
 function CoinItem(props) {
@@ -7,6 +8,9 @@ function CoinItem(props) {
   const toNumber = (i) => i * 1;
   return (
     <li className="coin--item">
+      <div className="coin--btn">
+        <BsArrowRightCircle />
+      </div>
       <p className="coin--head">{data.symbol}</p>
       <p className="coin--preview">{data.name.toUpperCase()}</p>
       <p className="coin--preview coin-percent">
