@@ -4,9 +4,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 25vh;
-  margin: 1.5rem;
-  padding: 0.25%;
+  height: 100%;
   color: aliceblue;
 }
 
@@ -54,12 +52,12 @@
 
 h1 {
   font-family: 'Open Sans', sans-serif;
-  font-size: 7vw;
+  font-size: 5vw;
   font-weight: 900;
 }
 
 .header--subtitle {
   font-family: 'Open Sans', sans-serif;
-  font-size: 3vw;
+  font-size: 2vw;
   font-weight: 500;
 }

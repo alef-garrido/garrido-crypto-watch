@@ -1,0 +1,9 @@
+main {
+  display: grid;
+  grid-template-rows: minmax(150px, 22vw) 1fr;
+}
+
+.head--display {
+  margin: 1.5rem;
+  padding: 0.25%;
+}
