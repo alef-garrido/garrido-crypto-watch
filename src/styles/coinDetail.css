@@ -1,0 +1,47 @@
+.coin--header-info * {
+  background-color: #ec4c8a;
+  color: aliceblue;
+}
+
+.coin--home-link {
+  height: auto;
+  padding: 1rem;
+  color: aliceblue;
+  display: flex;
+  justify-content: space-between;
+}
+
+.coin--header-info > * {
+  font-size: 2rem;
+  padding: 2rem;
+}
+
+.coin--home-link > a * {
+  width: 50px;
+  height: auto;
+  color: aliceblue;
+}
+
+.coin--header-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.coin--banner {
+  display: grid;
+  place-items: center;
+  color: aliceblue;
+}
+
+.coin--info-detail {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0.5rem;
+  color: aliceblue;
+}
+
+.coin--info-detail:nth-child(odd) {
+  background-color: #ce4276;
+}

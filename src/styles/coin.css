@@ -16,8 +16,11 @@
 }
 
 .coin--btn {
-  color: aliceblue;
   align-self: flex-end;
+}
+
+.coin--btn * {
+  color: aliceblue;
 }
 
 .coin--head {

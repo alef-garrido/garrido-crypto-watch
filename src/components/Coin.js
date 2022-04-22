@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { BsArrowLeftCircle } from 'react-icons/bs';
 import { useSelector } from 'react-redux';
+import '../styles/coinDetail.css';
 
 function Coin() {
   const coins = useSelector((state) => state.coins.list);
@@ -14,46 +15,47 @@ function Coin() {
         <Link to="/">
           <BsArrowLeftCircle />
         </Link>
+        <h2>Coin Detail</h2>
       </div>
       <header className="coin--header-info">
-        <p>coinData.symbol</p>
+        <p>{coinData.symbol}</p>
         <h3>{coinData.name}</h3>
       </header>
       <div className="coin--banner">Coin Detailed Brakedown</div>
-      <div className="coin--info-container">
-        <div className="coin--info-detail">
+      <ul className="coin--details-container">
+        <li className="coin--info-detail">
           <h4>Rank</h4>
           <p>{coinData.rank}</p>
-        </div>
-        <div className="coin--info-detail">
+        </li>
+        <li className="coin--info-detail">
           <h4>Supply</h4>
           <p>{getNum(coinData.supply)}</p>
-        </div>
-        <div className="coin--info-detail">
+        </li>
+        <li className="coin--info-detail">
           <h4>Max-Supply</h4>
           <p>{getNum(coinData.maxSupply)}</p>
-        </div>
-        <div className="coin--info-detail">
+        </li>
+        <li className="coin--info-detail">
           <h4>MArket-Cap (USD)</h4>
           <p>{getNum(coinData.marketCapUsd)}</p>
-        </div>
-        <div className="coin--info-detail">
+        </li>
+        <li className="coin--info-detail">
           <h4>Volume last 24Hrs (USD)</h4>
           <p>{getNum(coinData.volumeUsd24Hr)}</p>
-        </div>
-        <div className="coin--info-detail">
+        </li>
+        <li className="coin--info-detail">
           <h4>Price (USD)</h4>
           <p>{getNum(coinData.priceUsd)}</p>
-        </div>
-        <div className="coin--info-detail">
+        </li>
+        <li className="coin--info-detail">
           <h4>Change Percentage</h4>
           <p>{getNum(coinData.changePercent24Hr)}</p>
-        </div>
-        <div className="coin--info-detail">
+        </li>
+        <li className="coin--info-detail">
           <h4>V-Wap 24hrs</h4>
           <p>{getNum(coinData.vwap24Hr)}</p>
-        </div>
-      </div>
+        </li>
+      </ul>
     </div>
   );
 }
