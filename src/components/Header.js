@@ -1,10 +1,10 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
-import { useSelector } from 'react-redux';
 import { FaSearch } from 'react-icons/fa';
 import '../styles/header.css';
 
-function Header() {
-  const assets = useSelector((state) => state.coins.list);
+function Header(props) {
+  const { searchInput, assets, changeHandler } = props;
   return (
     <header className="header--container">
       <div className="header--title">
@@ -20,6 +20,8 @@ function Header() {
         <input
           type="text"
           placeholder="Search"
+          onChange={changeHandler}
+          value={searchInput}
         />
       </form>
     </header>
