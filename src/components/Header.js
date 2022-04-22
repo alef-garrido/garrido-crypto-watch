@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 import { FaSearch } from 'react-icons/fa';
+import logoTitle from '../assets/logo.png';
 import '../styles/header.css';
 
 function Header(props) {
@@ -8,13 +9,22 @@ function Header(props) {
   return (
     <header className="header--container">
       <div className="header--title">
-        <h1>CryptoWatcher</h1>
-        <p className="header--subtitle">
-          {`${assets.length} listed coins.`}
-        </p>
+        <div className="title--logo">
+          <img alt="" src={logoTitle} />
+        </div>
+        <div>
+          <h1>
+            Crypto
+            <br />
+            Watcher
+          </h1>
+          <p className="header--subtitle">
+            {`${assets.length} listed coins.`}
+          </p>
+        </div>
       </div>
       <form>
-        <div className="header--search">
+        <div className="header--search-icon">
           <FaSearch />
         </div>
         <input
