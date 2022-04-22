@@ -5,7 +5,7 @@ const slice = createSlice({
   name: 'coins',
   initialState: {
     list: [],
-    isloading: false,
+    isLoading: false,
   },
   reducers: {
     coinsRequested: (state) => {

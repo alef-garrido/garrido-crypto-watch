@@ -1,6 +1,7 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
 import { useSelector } from 'react-redux';
+import Loader from './Loader';
 import CoinItem from './CoinItem';
 import '../styles/coinList.css';
 
@@ -12,7 +13,7 @@ function Coins(props) {
       <ul className="home--list-container">
         {
           isLoading
-            ? 'Loading'
+            ? <Loader />
             : assets.map((coin) => <CoinItem key={coin.id} data={coin} />)
         }
       </ul>
