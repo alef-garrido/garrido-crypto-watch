@@ -25,7 +25,7 @@ function Coin() {
       <ul className="coin--details-container">
         <li className="coin--info-detail">
           <h4>Rank</h4>
-          <p>{coinData.rank}</p>
+          <p>{`# ${coinData.rank}`}</p>
         </li>
         <li className="coin--info-detail">
           <h4>Supply</h4>
@@ -36,8 +36,8 @@ function Coin() {
           <p>{getNum(coinData.maxSupply)}</p>
         </li>
         <li className="coin--info-detail">
-          <h4>MArket-Cap (USD)</h4>
-          <p>{getNum(coinData.marketCapUsd)}</p>
+          <h4>Market-Cap (USD)</h4>
+          <p>{`${getNum(coinData.marketCapUsd)} $`}</p>
         </li>
         <li className="coin--info-detail">
           <h4>Volume last 24Hrs (USD)</h4>
@@ -45,11 +45,11 @@ function Coin() {
         </li>
         <li className="coin--info-detail">
           <h4>Price (USD)</h4>
-          <p>{getNum(coinData.priceUsd)}</p>
+          <p>{`${getNum(coinData.priceUsd)} $`}</p>
         </li>
         <li className="coin--info-detail">
           <h4>Change Percentage</h4>
-          <p>{getNum(coinData.changePercent24Hr)}</p>
+          <p>{`${getNum(coinData.changePercent24Hr)} %`}</p>
         </li>
         <li className="coin--info-detail">
           <h4>V-Wap 24hrs</h4>
