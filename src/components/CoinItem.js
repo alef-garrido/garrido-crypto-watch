@@ -2,7 +2,8 @@ import React from 'react';
 import { PropTypes } from 'prop-types';
 import { Link } from 'react-router-dom';
 import { BsArrowRightCircle } from 'react-icons/bs';
-import '../styles/coin.css';
+import { TiArrowSortedDown, TiArrowSortedUp } from 'react-icons/ti';
+import '../styles/coinItem.css';
 
 function CoinItem(props) {
   const { data } = props;
@@ -19,8 +20,20 @@ function CoinItem(props) {
       <p className="coin--preview coin-percent">
         {
           (toNumber(data.changePercent24Hr)) > 0
-            ? `+${(toNumber(data.changePercent24Hr)).toFixed(1)}`
-            : `${(toNumber(data.changePercent24Hr)).toFixed(1)}`
+            ? (
+              <span>
+                <TiArrowSortedUp style={{ color: 'aqua' }} />
+                {
+                `${(toNumber(data.changePercent24Hr)).toFixed(1)}`
+                }
+              </span>
+            )
+            : (
+              <span>
+                <TiArrowSortedDown style={{ color: 'red' }} />
+                {`${(toNumber(data.changePercent24Hr)).toFixed(1)}`}
+              </span>
+            )
         }
       </p>
       <p className="coin--preview coin-value">{`${(toNumber(data.priceUsd)).toFixed(3)} USD`}</p>
