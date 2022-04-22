@@ -19,7 +19,7 @@
 
 ## Live Demo
 
-[Live Demo](URL) Not deployed yet!
+[Live Demo](https://stupendous-piroshki-b9dbd8.netlify.app/)
 
 ## Getting Started
 
