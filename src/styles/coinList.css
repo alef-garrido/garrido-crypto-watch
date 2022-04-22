@@ -1,0 +1,17 @@
+:root {
+  --pripary-color: #ec4c8a;
+  --accent-color: #ce4276;
+}
+
+.home--container {
+  width: 100%;
+  background-color: var(--pripary-color);
+  margin: 0 auto;
+}
+
+.home--list-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  padding: 0;
+}

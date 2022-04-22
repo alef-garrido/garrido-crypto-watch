@@ -1,0 +1,50 @@
+@import './index.css';
+
+.coin--item {
+  width: 100%;
+  padding: 1rem;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  list-style: none;
+  background-color: var(--primary-color);
+}
+
+.coin--item:nth-child(4n + 2),
+.coin--item:nth-child(4n + 3) {
+  background-color: var(--accent-color);
+}
+
+.coin--btn {
+  align-self: flex-end;
+}
+
+.coin--btn * {
+  color: aliceblue;
+}
+
+.coin--head {
+  font-size: 13vw;
+  align-self: flex-start;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  color: #b13967;
+  margin: 0.5rem 0;
+}
+
+.coin--preview {
+  color: aliceblue;
+  font-size: 1rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+
+.coin-value {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.coin-percent {
+  font-weight: 400;
+}
