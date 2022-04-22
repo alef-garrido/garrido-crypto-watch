@@ -1,5 +1,6 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
+import { Link } from 'react-router-dom';
 import { BsArrowRightCircle } from 'react-icons/bs';
 import '../styles/coin.css';
 
@@ -9,7 +10,9 @@ function CoinItem(props) {
   return (
     <li className="coin--item">
       <div className="coin--btn">
-        <BsArrowRightCircle />
+        <Link to={`/${data.symbol}`}>
+          <BsArrowRightCircle />
+        </Link>
       </div>
       <p className="coin--head">{data.symbol}</p>
       <p className="coin--preview">{data.name.toUpperCase()}</p>

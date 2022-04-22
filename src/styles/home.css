@@ -1,6 +1,6 @@
 main {
   display: grid;
-  grid-template-rows: minmax(150px, 22vw) 1fr;
+  grid-template-rows: minmax(180px, 22vw) 1fr;
 }
 
 .head--display {

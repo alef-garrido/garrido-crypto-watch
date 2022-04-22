@@ -9,7 +9,7 @@
 }
 
 .header--container form {
-  width: 70%;
+  width: 80%;
   height: 3rem;
   align-self: center;
   display: flex;
@@ -31,6 +31,7 @@
   background-color: transparent;
   color: aliceblue;
   font-family: 'Lato', sans-serif;
+  outline: none;
 }
 
 .header--container form > input::placeholder {
@@ -52,12 +53,12 @@
 
 h1 {
   font-family: 'Open Sans', sans-serif;
-  font-size: 5vw;
+  font-size: 6vw;
   font-weight: 900;
 }
 
 .header--subtitle {
   font-family: 'Open Sans', sans-serif;
-  font-size: 2vw;
+  font-size: 3vw;
   font-weight: 500;
 }

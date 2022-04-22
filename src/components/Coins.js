@@ -10,10 +10,10 @@ function Coins() {
     <div className="home--container">
       <ul className="home--list-container">
         {
-          status
-            ? 'loading'
-            : coins.map((coin) => <CoinItem key={coin.id} data={coin} />)
-        }
+            status
+              ? 'loading'
+              : coins.map((coin) => <CoinItem key={coin.id} data={coin} />)
+          }
       </ul>
     </div>
   );

@@ -1,0 +1,17 @@
+.banner--container {
+  padding: 0.25rem 0;
+  display: grid;
+  place-items: center;
+  color: aliceblue;
+  background-color: #ce4276;
+}
+
+.banner--container a {
+  font-family: sans-serif;
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.banner--container a:hover {
+  color: #4369b2;
+}
