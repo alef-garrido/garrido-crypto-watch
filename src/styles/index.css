@@ -50,3 +50,8 @@ h6 {
 #__next {
   isolation: isolate;
 }
+
+.app--container {
+  width: 100vw;
+  height: 100vw;
+}
