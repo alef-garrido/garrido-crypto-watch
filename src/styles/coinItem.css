@@ -48,3 +48,9 @@
 .coin-percent {
   font-weight: 400;
 }
+
+.coin-percent > span {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}

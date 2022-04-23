@@ -1,9 +1,9 @@
 main {
   display: grid;
-  grid-template-rows: minmax(180px, 22vw) 1fr;
+  grid-template-rows: minmax(230px, 45vw) 1fr;
 }
 
 .head--display {
-  margin: 1.5rem;
-  padding: 0.25%;
+  padding: 5%;
+  height: 100%;
 }
