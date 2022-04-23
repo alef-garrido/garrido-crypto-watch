@@ -21,6 +21,10 @@
 
 [Live Demo](https://stupendous-piroshki-b9dbd8.netlify.app/)
 
+## Documentation Video
+
+[See here](https://www.loom.com/share/71312a4ed9df4f17a15c2391fa3d3db3)
+
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
