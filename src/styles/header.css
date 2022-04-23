@@ -8,6 +8,10 @@
   color: aliceblue;
 }
 
+form {
+  margin: 1rem 0;
+}
+
 .header--container form {
   width: 80%;
   height: 3rem;
@@ -53,10 +57,13 @@
   align-items: center;
   align-self: center;
 }
+
 .title--logo {
   width: 50%;
-  text-align: -webkit-right;
+  display: grid;
+  place-items: flex-end;
 }
+
 .title--logo > img {
   width: 60%;
 }
@@ -73,8 +80,4 @@ h1 {
   font-family: 'Open Sans', sans-serif;
   font-size: 3vw;
   font-weight: 500;
-}
-
-form {
-  margin: 1rem 0;
 }
