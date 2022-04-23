@@ -1,0 +1,9 @@
+main {
+  display: grid;
+  grid-template-rows: minmax(230px, 45vw) 1fr;
+}
+
+.head--display {
+  padding: 5%;
+  height: 100%;
+}
