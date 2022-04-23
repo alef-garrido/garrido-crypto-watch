@@ -97,6 +97,7 @@ Give a ⭐️ if you like this project!
 
 - This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 - Microverse's Curriculum project
+- Original design idea by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio) 
 - [CoinCap API 2.0](https://docs.coincap.io/)
 - Bitcoin icon created by [photo3idea_studio](https://www.flaticon.com/free-icons/bitcoin)
 - Thanks to all code reviewers
