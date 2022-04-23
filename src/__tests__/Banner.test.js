@@ -1,7 +1,7 @@
-import { render, screen } from "@testing-library/react";
+import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import { Provider } from "react-redux";
-import store from '../store/configureStore'
+import { Provider } from 'react-redux';
+import store from '../store/configureStore';
 import Banner from '../components/Banner';
 
 describe('Banner is rendered', () => {

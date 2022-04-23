@@ -10,8 +10,9 @@ it('renders correctly', () => {
     <BrowserRouter>
       <Provider store={store}>
         <App />
-      </Provider>,
-    </BrowserRouter>
+      </Provider>
+      ,
+    </BrowserRouter>,
   ).toJSON();
   expect(tree).toMatchSnapshot();
 });
